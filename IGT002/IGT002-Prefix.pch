@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'IGT002' target in the 'IGT002' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#import "UIUtil.h"
+#import "IGLabel.h"
+#import "IGTextField.h"
+#import "IGUISegmentedControl.h"
+#import "DelayedAlarmViewController.h"
+#import "NSDate+Helper.h"
+#import "IGDateUtil.h"
+#import "UIColor+IGColor.h"
+#import "Tomato+Helper.h"
+#endif

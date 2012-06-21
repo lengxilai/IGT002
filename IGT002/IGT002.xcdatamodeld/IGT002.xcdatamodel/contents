@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11D50" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Calendar" representedClassName="Calendar" syncable="YES">
+        <attribute name="datetime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="finished" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="unfinished" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Config" representedClassName="Config" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="StopReason" representedClassName="StopReason" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tomato" representedClassName="Tomato" syncable="YES">
+        <attribute name="endtime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="starttime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tomatodate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="calendar" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Calendar" syncable="YES"/>
+        <relationship name="stopreason" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="StopReason" syncable="YES"/>
+        <relationship name="tomatoname" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TomatoName" syncable="YES"/>
+    </entity>
+    <entity name="TomatoName" representedClassName="TomatoName" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Calendar" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Config" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="StopReason" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Tomato" positionX="160" positionY="192" width="128" height="150"/>
+        <element name="TomatoName" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>
